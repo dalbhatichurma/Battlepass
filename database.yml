@@ -1,0 +1,16 @@
+# =============================================
+#   BattlePass Database Configuration
+# =============================================
+
+# Storage type: YAML or MYSQL
+storage-type: YAML
+
+mysql:
+  host: localhost
+  port: 3306
+  database: battlepass
+  username: root
+  password: password
+  pool-size: 10
+  # Table prefix
+  prefix: bp_

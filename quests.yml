@@ -1,0 +1,292 @@
+# =============================================
+#   BattlePass Quests Configuration
+# =============================================
+# Quest Types: BLOCK_BREAK, BLOCK_PLACE, MOB_KILL, PLAYER_KILL,
+#              WALK_DISTANCE, PLAYTIME, CRAFT_ITEM, FISH, MINE_ORE,
+#              BREED_ANIMAL, TAME_ANIMAL, ENCHANT_ITEM, TRADE_VILLAGER,
+#              EAT_FOOD, SHOOT_ARROW, SWIM_DISTANCE, CLIMB_HEIGHT,
+#              COLLECT_ITEM, SMELT_ITEM, SLEEP, CUSTOM
+
+quests:
+
+  # ── DAILY QUESTS ──────────────────────────────────────────────────────────────
+  daily_woodcutter:
+    name: "&aWoodcutter"
+    description: "&7Break &e50 &7wood logs"
+    type: BLOCK_BREAK
+    target: OAK_LOG,BIRCH_LOG,SPRUCE_LOG,JUNGLE_LOG,ACACIA_LOG,DARK_OAK_LOG,MANGROVE_LOG
+    amount: 50
+    xp-reward: 200
+    category: DAILY
+    icon: OAK_LOG
+
+  daily_miner:
+    name: "&aMiner"
+    description: "&7Mine &e30 &7stone blocks"
+    type: BLOCK_BREAK
+    target: STONE,COBBLESTONE,DEEPSLATE
+    amount: 30
+    xp-reward: 150
+    category: DAILY
+    icon: STONE
+
+  daily_hunter:
+    name: "&aHunter"
+    description: "&7Kill &e10 &7animals"
+    type: MOB_KILL
+    target: COW,PIG,SHEEP,CHICKEN,RABBIT
+    amount: 10
+    xp-reward: 200
+    category: DAILY
+    icon: BEEF
+
+  daily_explorer:
+    name: "&aExplorer"
+    description: "&7Walk &e500 &7blocks"
+    type: WALK_DISTANCE
+    amount: 500
+    xp-reward: 150
+    category: DAILY
+    icon: LEATHER_BOOTS
+
+  daily_fisher:
+    name: "&aFisher"
+    description: "&7Catch &e5 &7fish"
+    type: FISH
+    amount: 5
+    xp-reward: 200
+    category: DAILY
+    icon: FISHING_ROD
+
+  daily_farmer:
+    name: "&aFarmer"
+    description: "&7Harvest &e20 &7crops"
+    type: BLOCK_BREAK
+    target: WHEAT,CARROTS,POTATOES,BEETROOTS,MELON,PUMPKIN
+    amount: 20
+    xp-reward: 150
+    category: DAILY
+    icon: WHEAT
+
+  daily_crafter:
+    name: "&aCrafter"
+    description: "&7Craft &e10 &7items"
+    type: CRAFT_ITEM
+    amount: 10
+    xp-reward: 200
+    category: DAILY
+    icon: CRAFTING_TABLE
+
+  daily_online:
+    name: "&aOnline Time"
+    description: "&7Stay online for &e30 &7minutes"
+    type: PLAYTIME
+    amount: 30
+    xp-reward: 300
+    category: DAILY
+    icon: CLOCK
+
+  daily_archer:
+    name: "&aArcher"
+    description: "&7Shoot &e20 &7arrows"
+    type: SHOOT_ARROW
+    amount: 20
+    xp-reward: 150
+    category: DAILY
+    icon: BOW
+
+  daily_smelter:
+    name: "&aSmelter"
+    description: "&7Smelt &e15 &7items"
+    type: SMELT_ITEM
+    amount: 15
+    xp-reward: 200
+    category: DAILY
+    icon: FURNACE
+
+  # ── WEEKLY QUESTS ─────────────────────────────────────────────────────────────
+  weekly_diamond_miner:
+    name: "&bDiamond Miner"
+    description: "&7Mine &e10 &7diamonds"
+    type: MINE_ORE
+    target: DIAMOND_ORE,DEEPSLATE_DIAMOND_ORE
+    amount: 10
+    xp-reward: 1000
+    category: WEEKLY
+    icon: DIAMOND
+
+  weekly_monster_slayer:
+    name: "&bMonster Slayer"
+    description: "&7Kill &e50 &7monsters"
+    type: MOB_KILL
+    target: ZOMBIE,SKELETON,CREEPER,SPIDER,ENDERMAN,WITCH,SLIME
+    amount: 50
+    xp-reward: 1200
+    category: WEEKLY
+    icon: IRON_SWORD
+
+  weekly_pvp_warrior:
+    name: "&bPvP Warrior"
+    description: "&7Kill &e5 &7players"
+    type: PLAYER_KILL
+    amount: 5
+    xp-reward: 1500
+    category: WEEKLY
+    icon: DIAMOND_SWORD
+
+  weekly_marathon:
+    name: "&bMarathon Runner"
+    description: "&7Walk &e5000 &7blocks"
+    type: WALK_DISTANCE
+    amount: 5000
+    xp-reward: 1000
+    category: WEEKLY
+    icon: DIAMOND_BOOTS
+
+  weekly_enchanter:
+    name: "&bEnchanter"
+    description: "&7Enchant &e5 &7items"
+    type: ENCHANT_ITEM
+    amount: 5
+    xp-reward: 1200
+    category: WEEKLY
+    icon: ENCHANTING_TABLE
+
+  weekly_trader:
+    name: "&bVillager Trader"
+    description: "&7Trade with villagers &e10 &7times"
+    type: TRADE_VILLAGER
+    amount: 10
+    xp-reward: 1000
+    category: WEEKLY
+    icon: EMERALD
+
+  weekly_tamer:
+    name: "&bAnimal Tamer"
+    description: "&7Tame &e3 &7animals"
+    type: TAME_ANIMAL
+    amount: 3
+    xp-reward: 1000
+    category: WEEKLY
+    icon: BONE
+
+  weekly_breeder:
+    name: "&bBreeder"
+    description: "&7Breed &e10 &7animals"
+    type: BREED_ANIMAL
+    amount: 10
+    xp-reward: 1000
+    category: WEEKLY
+    icon: WHEAT_SEEDS
+
+  weekly_online_time:
+    name: "&bDedicated Player"
+    description: "&7Stay online for &e3 &7hours"
+    type: PLAYTIME
+    amount: 180
+    xp-reward: 1500
+    category: WEEKLY
+    icon: CLOCK
+
+  weekly_nether_explorer:
+    name: "&bNether Explorer"
+    description: "&7Kill &e20 &7nether mobs"
+    type: MOB_KILL
+    target: BLAZE,GHAST,PIGLIN,HOGLIN,WITHER_SKELETON,MAGMA_CUBE
+    amount: 20
+    xp-reward: 1200
+    category: WEEKLY
+    icon: NETHERRACK
+
+  # ── SEASONAL QUESTS ───────────────────────────────────────────────────────────
+  seasonal_master_miner:
+    name: "&6Master Miner"
+    description: "&7Mine &e1000 &7blocks total"
+    type: BLOCK_BREAK
+    amount: 1000
+    xp-reward: 5000
+    category: SEASONAL
+    icon: DIAMOND_PICKAXE
+
+  seasonal_warlord:
+    name: "&6Warlord"
+    description: "&7Kill &e500 &7mobs"
+    type: MOB_KILL
+    amount: 500
+    xp-reward: 5000
+    category: SEASONAL
+    icon: NETHERITE_SWORD
+
+  seasonal_traveler:
+    name: "&6World Traveler"
+    description: "&7Walk &e50000 &7blocks"
+    type: WALK_DISTANCE
+    amount: 50000
+    xp-reward: 5000
+    category: SEASONAL
+    icon: COMPASS
+
+  seasonal_pvp_legend:
+    name: "&6PvP Legend"
+    description: "&7Kill &e100 &7players"
+    type: PLAYER_KILL
+    amount: 100
+    xp-reward: 8000
+    category: SEASONAL
+    icon: NETHERITE_SWORD
+
+  seasonal_builder:
+    name: "&6Master Builder"
+    description: "&7Place &e5000 &7blocks"
+    type: BLOCK_PLACE
+    amount: 5000
+    xp-reward: 5000
+    category: SEASONAL
+    icon: BRICKS
+
+  seasonal_fisherman:
+    name: "&6Master Fisherman"
+    description: "&7Catch &e200 &7fish"
+    type: FISH
+    amount: 200
+    xp-reward: 4000
+    category: SEASONAL
+    icon: FISHING_ROD
+
+  seasonal_dedicated:
+    name: "&6Dedicated Player"
+    description: "&7Play for &e24 &7hours total"
+    type: PLAYTIME
+    amount: 1440
+    xp-reward: 6000
+    category: SEASONAL
+    icon: NETHER_STAR
+
+  seasonal_dragon_slayer:
+    name: "&6Dragon Slayer"
+    description: "&7Kill the Ender Dragon"
+    type: MOB_KILL
+    target: ENDER_DRAGON
+    amount: 1
+    xp-reward: 10000
+    category: SEASONAL
+    icon: DRAGON_EGG
+
+  seasonal_wither_slayer:
+    name: "&6Wither Slayer"
+    description: "&7Kill the Wither"
+    type: MOB_KILL
+    target: WITHER
+    amount: 1
+    xp-reward: 8000
+    category: SEASONAL
+    icon: WITHER_SKELETON_SKULL
+
+  seasonal_crafter_master:
+    name: "&6Master Crafter"
+    description: "&7Craft &e500 &7items"
+    type: CRAFT_ITEM
+    amount: 500
+    xp-reward: 4000
+    category: SEASONAL
+    icon: CRAFTING_TABLE

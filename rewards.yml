@@ -1,0 +1,219 @@
+# =============================================
+#   BattlePass Rewards Configuration
+# =============================================
+# Reward types: ITEM, MONEY, COMMAND, PERMISSION
+# Each level can have a free and premium reward
+
+rewards:
+  1:
+    free:
+      type: ITEM
+      item: IRON_SWORD
+      amount: 1
+      name: "&7Starter Sword"
+    premium:
+      type: MONEY
+      amount: 500
+
+  2:
+    free:
+      type: MONEY
+      amount: 100
+    premium:
+      type: ITEM
+      item: GOLDEN_APPLE
+      amount: 3
+
+  3:
+    free:
+      type: ITEM
+      item: IRON_PICKAXE
+      amount: 1
+    premium:
+      type: COMMAND
+      command: "give %player% diamond 5"
+
+  4:
+    free:
+      type: MONEY
+      amount: 150
+    premium:
+      type: MONEY
+      amount: 750
+
+  5:
+    free:
+      type: ITEM
+      item: IRON_CHESTPLATE
+      amount: 1
+      name: "&7Iron Chestplate"
+    premium:
+      type: ITEM
+      item: DIAMOND_SWORD
+      amount: 1
+      name: "&bDiamond Sword"
+
+  6:
+    free:
+      type: MONEY
+      amount: 200
+    premium:
+      type: COMMAND
+      command: "give %player% golden_apple 5"
+
+  7:
+    free:
+      type: ITEM
+      item: COOKED_BEEF
+      amount: 16
+    premium:
+      type: MONEY
+      amount: 1000
+
+  8:
+    free:
+      type: MONEY
+      amount: 250
+    premium:
+      type: ITEM
+      item: DIAMOND_PICKAXE
+      amount: 1
+
+  9:
+    free:
+      type: ITEM
+      item: IRON_BOOTS
+      amount: 1
+    premium:
+      type: COMMAND
+      command: "give %player% emerald 10"
+
+  10:
+    free:
+      type: ITEM
+      item: IRON_HELMET
+      amount: 1
+    premium:
+      type: ITEM
+      item: DIAMOND_CHESTPLATE
+      amount: 1
+      name: "&bDiamond Chestplate"
+
+  15:
+    free:
+      type: MONEY
+      amount: 500
+    premium:
+      type: ITEM
+      item: ELYTRA
+      amount: 1
+
+  20:
+    free:
+      type: ITEM
+      item: DIAMOND
+      amount: 5
+    premium:
+      type: MONEY
+      amount: 2500
+
+  25:
+    free:
+      type: MONEY
+      amount: 750
+    premium:
+      type: ITEM
+      item: NETHERITE_INGOT
+      amount: 1
+
+  30:
+    free:
+      type: ITEM
+      item: DIAMOND_SWORD
+      amount: 1
+    premium:
+      type: COMMAND
+      command: "lp user %player% permission set vip.rank true"
+
+  35:
+    free:
+      type: MONEY
+      amount: 1000
+    premium:
+      type: ITEM
+      item: TOTEM_OF_UNDYING
+      amount: 1
+
+  40:
+    free:
+      type: ITEM
+      item: DIAMOND_PICKAXE
+      amount: 1
+    premium:
+      type: MONEY
+      amount: 5000
+
+  45:
+    free:
+      type: MONEY
+      amount: 1500
+    premium:
+      type: ITEM
+      item: NETHERITE_SWORD
+      amount: 1
+      name: "&4Netherite Blade"
+
+  50:
+    free:
+      type: ITEM
+      item: NETHERITE_INGOT
+      amount: 1
+    premium:
+      type: COMMAND
+      command: "give %player% netherite_chestplate 1"
+
+  60:
+    free:
+      type: MONEY
+      amount: 2000
+    premium:
+      type: ITEM
+      item: BEACON
+      amount: 1
+
+  70:
+    free:
+      type: ITEM
+      item: DIAMOND
+      amount: 20
+    premium:
+      type: MONEY
+      amount: 10000
+
+  80:
+    free:
+      type: MONEY
+      amount: 3000
+    premium:
+      type: ITEM
+      item: NETHERITE_PICKAXE
+      amount: 1
+
+  90:
+    free:
+      type: ITEM
+      item: NETHERITE_INGOT
+      amount: 3
+    premium:
+      type: COMMAND
+      command: "give %player% netherite_armor_trim_smithing_template 1"
+
+  100:
+    free:
+      type: ITEM
+      item: NETHER_STAR
+      amount: 1
+      name: "&6&lSeason Champion"
+    premium:
+      type: COMMAND
+      command: "lp user %player% permission set battlepass.champion true"

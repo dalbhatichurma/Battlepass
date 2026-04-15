@@ -1,0 +1,56 @@
+# =============================================
+#   BattlePass Configuration
+# =============================================
+
+# Season settings
+season:
+  name: "Season 1"
+  number: 1
+  max-level: 100
+  # Days until auto-reset (0 = disabled)
+  duration-days: 90
+  start-date: "2024-01-01"
+
+# XP settings
+xp:
+  # Base XP required per level
+  base-xp: 1000
+  # Multiplier per level (1.05 = 5% harder each level)
+  scaling-factor: 1.05
+  # Global XP booster (1.0 = normal)
+  global-booster: 1.0
+
+# Leaderboard
+leaderboard:
+  enabled: true
+  update-interval-seconds: 300
+  top-size: 10
+
+# Notifications
+notifications:
+  levelup-title: true
+  levelup-actionbar: true
+  levelup-sound: true
+  levelup-particles: true
+  quest-complete-title: true
+  quest-complete-sound: true
+
+# Sounds
+sounds:
+  levelup: ENTITY_PLAYER_LEVELUP
+  quest-complete: ENTITY_EXPERIENCE_ORB_PICKUP
+  reward-claim: ENTITY_ITEM_PICKUP
+  menu-open: UI_BUTTON_CLICK
+  menu-click: UI_BUTTON_CLICK
+
+# Messages
+messages:
+  prefix: "&8[&6&lBP&8] &r"
+  no-permission: "&cYou don't have permission!"
+  levelup: "&6&l✦ LEVEL UP! &eYou reached level &6%level%&e!"
+  quest-complete: "&a&l✔ Quest Complete! &7%quest%"
+  reward-claimed: "&aReward claimed: &f%reward%"
+  already-claimed: "&cYou already claimed this reward!"
+  need-premium: "&cThis reward requires &6Premium Pass&c!"
+  season-reset: "&6&lSeason Reset! &eA new season has begun!"
+  booster-active: "&b⚡ XP Booster &7active: &b%multiplier%x &7for &b%time%"

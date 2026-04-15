@@ -1,0 +1,25 @@
+name: BattlePass
+version: 1.0.0
+main: com.battlepass.BattlePass
+api-version: '1.21'
+author: YourName
+description: Advanced seasonal battle pass progression system
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  bp:
+    description: BattlePass main command
+    usage: /bp [quests|rewards|claim|admin]
+    aliases: [battlepass]
+    permission: battlepass.use
+
+permissions:
+  battlepass.use:
+    description: Use the BattlePass
+    default: true
+  battlepass.premium:
+    description: Access premium rewards track
+    default: false
+  battlepass.admin:
+    description: Admin access
+    default: op
